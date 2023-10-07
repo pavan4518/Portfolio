@@ -18,7 +18,7 @@ h1,h4,p,a{
   padding: 12px 32px;
   font-size: 1rem;
   text-transform: uppercase;
-  background: rgb(248,217,15);
+  background: rgb(224, 238, 67);
   color:#222;
   font-weight: 600;
   cursor: pointer;
@@ -26,6 +26,7 @@ h1,h4,p,a{
 .btn.light{
   background-color: transparent;
   color: #fff;
+
 }
 .btn:hover{
   background: rgba(255,255,255,0.2);
