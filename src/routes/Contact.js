@@ -1,8 +1,16 @@
 import React from 'react'
-
+import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+        <Navbar/>
+        <Footer/>
+
+
+
+
+    </div>
   )
 }
 

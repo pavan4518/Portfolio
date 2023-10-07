@@ -1,13 +1,23 @@
 
+import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 
 
 const Navbar = () => {
+    const [color,setColor]=useState(false)
+    const chnageColor=()=>{
+      if(window.scrollY >=100){
+        setColor(true)
+      }  else{
+        setColor(false);
+      }
+    }
+    window.addEventListener("scroll",chnageColor)
  
   return (
-    <div className="header">
+    <div className={color ?"header headr-bg":"header"}>
       <Link to="/">
         <h1>Portflio</h1>
       </Link>
@@ -16,13 +26,13 @@ const Navbar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/projects">Project</Link>
+          <Link to="/project">Project</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/contact">Conatct</Link>
+        <Link to="/conatct"  >Contact</Link>
         </li>
       </ul>
       
